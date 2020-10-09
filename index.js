@@ -1,5 +1,6 @@
 // @create-index
 
-export { default as element } from './element.js';
-export { default as test } from './test.js';
+console.log(t);
 
+export { default as element } from "./element.js";
+export { default as test } from "./test.js";
