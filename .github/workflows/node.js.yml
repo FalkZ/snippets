@@ -26,10 +26,10 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm version patch --force --git-tag-version=false
-      # - uses: butlerlogic/action-autotag@1.0.0
-      #   with:
-      #     GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      #     strategy: package
+      - uses: butlerlogic/action-autotag@1.0.0
+        with:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          strategy: package
       # - run: npm test
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -41,7 +41,7 @@ jobs:
 
           # Optional options appended to `git-commit`
           # See https://git-scm.com/docs/git-commit for a list of available options
-          # commit_options: "--no-verify --signoff"
+          #  commit_options: "--follow-flags"
 
           # Optional glob pattern of files which should be added to the commit
           # See the `pathspec`-documentation for git
