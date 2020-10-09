@@ -26,6 +26,12 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       # - run: npm test
+      - name: "Version Bump"
+        uses: "Manuel-777/gh-action-bump-version@master"
+        with:
+          tag-prefix: ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Required
