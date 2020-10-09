@@ -1,0 +1,19 @@
+{
+  "name": "utiliti",
+  "version": "0.0.20",
+  "description": "",
+  "main": "element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FalkZ/snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FalkZ/snippets/issues"
+  },
+  "homepage": "https://github.com/FalkZ/snippets#readme"
+}
