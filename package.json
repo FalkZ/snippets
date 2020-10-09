@@ -2,7 +2,7 @@
   "name": "utiliti",
   "version": "0.0.20",
   "description": "",
-  "main": "element.js",
+  "main": "index.js",
   "scripts": {
     "build": "create-index . --ignoreUnsafe"
   },
