@@ -1,1 +1,1 @@
-export default () => "t6";
+export default "fssklja";
