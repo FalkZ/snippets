@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +32,7 @@ jobs:
           commit_message: updated index
 
           # Optional branch to push to, defaults to the current branch
-          branch: index
+          #  branch: index
 
           # Optional options appended to `git-commit`
           # See https://git-scm.com/docs/git-commit for a list of available options
