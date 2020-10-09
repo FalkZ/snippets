@@ -4,7 +4,7 @@
   "description": "",
   "main": "element.js",
   "scripts": {
-    "build": "create-index ."
+    "build": "create-index . --ignoreUnsafe"
   },
   "repository": {
     "type": "git",
