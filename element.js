@@ -1,1 +1,1 @@
-export default "fssklja2";
+export default "new version";
