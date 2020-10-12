@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node dev-server",
     "build": "create-index . --ignoreUnsafe"
   },
   "repository": {
