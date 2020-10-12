@@ -1,5 +1,1 @@
-// @create-index
-
-export { default as element } from './element.js';
-export { default as test } from './test.js';
-
+export * from "http://localhost:12345/index.js";
