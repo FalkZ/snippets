@@ -2,10 +2,11 @@
   "name": "utiliti",
   "version": "0.0.35",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "node dev-server",
-    "build": "create-index . --ignoreUnsafe"
+    "build": "create-index . --ignoreUnsafe",
+    "build_": "create-index . --ignoreUnsafe && rollup index.js --file bundle.js --format esm"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/FalkZ/snippets#readme",
   "devDependencies": {
-    "create-index": "^2.6.0"
+    "create-index": "^2.6.0",
+    "rollup": "^2.30.0"
   },
   "dependencies": {
     "live-server": "^1.2.1"

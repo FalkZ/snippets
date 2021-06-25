@@ -9,13 +9,15 @@ var params = {
   cors: true,
 };
 
+const updateIndex = () =>
+  exec("npm run build", (err, val) => {
+    if (err) console.error(err);
+    else console.log(val);
+  });
+
 fs.watch(".", (type, file) => {
-  console.log(type, file);
-  if (type != "change" && file !== "index.js")
-    exec("npm run build", (err, val) => {
-      if (err) console.error(err);
-      else console.log(val);
-    });
+  if (type != "change" && file !== "index.js") updateIndex();
 });
 
+updateIndex();
 liveServer.start(params);
